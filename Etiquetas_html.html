@@ -3,6 +3,7 @@
   <head>
     <title>Etiquetas HTML</title>
     <style></style>
+    <html lang="es">
     <body>
       <h1>Etiquetas html</h1>
       <h2>li</h2>
@@ -22,48 +23,124 @@
         usemap="#mapadelmundo"
       />
 
-      
       <map name="mapadelmundo">
-      
-        <area shape="circle" 
-        coords="110,110,40" 
-        href="https://es.wikipedia.org/wiki/Guerra_de_Secesi%C3%B3n" 
-        alt="civil war"/>
-         
-
-       
-         <area shape="circle"
-       coords="255,40,25"
-        href="https://es.wikipedia.org/wiki/Segunda_Guerra_Mundial"
-        alt="Europa" />
+        <area
+          shape="circle"
+          coords="110,110,40"
+          href="https://es.wikipedia.org/wiki/Guerra_de_Secesi%C3%B3n"
+          alt="civil war"
         />
 
-        
-        <area shape="circle"
-        coords="365,105,55"
-        href="https://es.wikipedia.org/wiki/Guerras_del_Opio"
-        alt="Asia" />
-        
+        <area
+          shape="circle"
+          coords="255,40,25"
+          href="https://es.wikipedia.org/wiki/Segunda_Guerra_Mundial"
+          alt="Europa"
+        />
+        />
+
+        <area
+          shape="circle"
+          coords="365,105,55"
+          href="https://es.wikipedia.org/wiki/Guerras_del_Opio"
+          alt="Asia"
+        />
+
         <h2>menu</h2>
-        <p> una lista desordenada de datos(usa li como apoyo)</p>
+        <p>una lista desordenada de datos(usa li como apoyo)</p>
         <menu>
-            <li>Sebastian V</li>
-            <li>Sebastian R </li> 
-            <li>Karoline</li>
-        <h2>meter</h2>
-        <p>Se usa para mostrar rangos escalares medibles dentro de un rango definido</p>
-         <meter value="0.2" min="0" max="1">24%</meter> 24%
-         <h1>nav</h1>
-         <p>Define secciones de navegación</p>
-         <li><a href="https://www.google.com/">google</a></li>
-         <h2>object</h2>
-         <p>Se usa para insertar contenido externo</p>
-         <object data="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962.jpg" 
-          type="image/jpeg" 
-          width="600" height="400">
-  </object>
+          <li>Sebastian V</li>
+          <li>Sebastian R</li>
+          <li>Karoline</li>
+          <h2>meter</h2>
+          <p>
+            Se usa para mostrar rangos escalares medibles dentro de un rango
+            definido
+          </p>
+          <meter value="0.2" min="0" max="1">24%</meter> 24%
+          <h1>nav</h1>
+          <p>Define secciones de navegación</p>
+          <li><a href="https://www.google.com/">google</a></li>
+          <h2>object</h2>
+          <p>Se usa para insertar contenido externo</p>
+          <object
+            data="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962.jpg"
+            type="image/jpeg"
+            width="600"
+            height="400"
+          ></object>
         </menu>
       </map>
+
+      <h2>ol</h2>
+      <p>
+        Esta etiqueta permite colocar viñetas a un elemento, puede ser con
+        numeración o alfabeticamente
+      </p>
+      <h3>Viñetas numéricas</h3>
+      <ol>
+        <li>ejemplo1</li>
+        <li>ejemplo2</li>
+        <li>ejemplo3</li>
+      </ol>
+      <h3>Viñetas alfabéticas</h3>
+      <ol type="a">
+        <li>ejemplo1</li>
+        <li>ejemplo2</li>
+        <li>ejemplo3</li>
+      </ol>
+
+      <h2>option</h2>
+      <p>
+        Se utiliza normalmente para definir los elementos a escoger de un menú
+        desplegable
+      </p>
+      <label for="estadocivil">Estado Civil:</label>
+      <select id="estadocivil">
+        <option value="">Indefinido</option>
+        <option value="">Casadx</option>
+        <option value="">Solterx</option>
+        <option value="">Unión Libre</option>
+      </select>
+
+      <h2>optgroup</h2>
+      <p>
+        Permite agrupar los elementos "option", permitiendo organizarlos por
+        categorias en el menú desplegable
+      </p>
+      <label for="ejemplo">Optgroup Ejemplo</label>
+      <select id="ejemplo">
+        <optgroup label="Grupo 1">
+          <option value="">opcion 1.1</option>
+          <option value="">opcion 1.2</option>
+        </optgroup>
+
+        <optgroup label="Grupo 2">
+          <option value="">opcion 2.1</option>
+          <option value="">opcion 2.2</option>
+        </optgroup>
+      </select>
+
+      <h2>output</h2>
+
+      <h2>p</h2>
+      <p>Esta etiqueta permite colocar párrafos o bloques de texto</p>
+      <p>--Esto es un ejemplo de un párrafo--</p>
+
+      <h2>param</h2>
+      <p>
+        Esta etiqueta se encuentra obsoleta y en muchos navegadores no es
+        admitida, pero anteriormente era utilizada para otorgar parámetros a un
+        elemento "object", es decir, indica al navegador cómo debe comportarse
+        ese elemento
+      </p>
+      <object data="SILABO.pdf" type="application/pdf" width="300" height="400">
+        <param name="view" value="FitH">
+        <param name="scrollbar" value="true">
+      </object>
+
+      <h2>pre</h2>
     </body>
   </head>
+</html>
 </html>
