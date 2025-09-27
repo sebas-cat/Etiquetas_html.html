@@ -60,17 +60,14 @@
           <h1>nav</h1>
           <p>Define secciones de navegación</p>
           <li><a href="https://www.google.com/">google</a></li>
+          
           <h2>object</h2>
-          <p>Se usa para insertar contenido externo</p>
-          <object>
-            data="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962.jpg"
-            type="image/jpeg"
-            width="600"
-            height="400"
-          </object>
+         <p>Se usa para insertar contenido externo</p>
+         <object data="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962.jpg" 
+          type="image/jpeg" 
+          width="600" height="400">
+         </object>
        
-     
-
       <h2>ol</h2>
       <p>
         Esta etiqueta permite colocar viñetas a un elemento, puede ser con
@@ -121,6 +118,14 @@
       </select>
 
       <h2>output</h2>
+      <p>Esta etiqueta permite desplegar el resultado de un operación 
+        realizada por el ususario
+       </p>
+      <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" name="a" value="0" /> +
+        <input type="number" id="b" name="b" value="0" /> =
+        <output name="result" for="a b">3</output>
+      </form>
 
       <h2>p</h2>
       <p>Esta etiqueta permite colocar párrafos o bloques de texto</p>
@@ -139,6 +144,59 @@
       </object>
 
       <h2>pre</h2>
+      <p>Permite desplegar un bloque de texto preformateado, lo que implica que se va
+        a presentar como tal esté escrito. 
+      </p>
+      <pre>
+         *
+        ***
+       *****
+      *******
+      </pre>
+
+      <h2>progress</h2>
+      <p>La etiqueta <code>progress</code> se utiliza para representar el
+         progreso de una tarea en curso, mostrando qué parte ya está completada.
+      </p>
+      <progress value="40" max="100"></progress> 40%
+
+      <h2>q</h2>
+      <p>La etiqueta <code>q</code> se utiliza para representar citas cortas
+         dentro del texto.
+      </p>
+      <p>Einstein dijo: <q>La imaginación es más importante que el conocimiento.</q></p>
+
+      <h2>ruby</h2>
+      <p>La etiqueta <code>ruby</code> se utiliza para mostrar anotaciones sobre 
+        caracteres, muy común en idiomas asiáticos. Funciona junto con 
+        <code>rt</code> y <code>rp</code>.
+      </p>
+      <ruby>
+        漢 <rt>Kan</rt>
+        字 <rt>Ji</rt>
+        <rp>(</rp><rt>Caracter chino</rt><rp>)</rp>
+      </ruby>
+
+       <h2>rt</h2>
+      <p>Permite definir una explicación o pronunciación en una anotación ruby</p>
+      <ruby>
+         漢 <rt> ㄏㄢˋ </rt>
+      </ruby>
+
+      <h2>rp</h2>
+      <p>Permite proporcionar un paréntesis alrededor de un texto ruby,
+        ayuda a definir qué mostrará el navegador si no admite anotaciones ruby
+      </p>
+      <ruby>
+        漢 <rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+      </ruby>
+
+      <h2>samp</h2>
+      <p>La etiqueta <code>samp</code> se utiliza para mostrar ejemplos de salida
+         de un programa o sistema.
+      </p>
+      <p><samp>Error 404: Página no encontrada</samp></p>
+
     </body>
   </head>
 </html>
